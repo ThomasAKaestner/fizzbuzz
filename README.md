@@ -39,13 +39,16 @@ Buzz
 
 ### Solution
 I went for the plain PHP solution to show how I would structure the application and how I would solve issues like routing & dependency injection.
+The index.php is the entry point of the application. It is responsible for calling the router.php.
+The router.php is responsible for calling the correct controller and action and is using the dependency injection container to inject the dependencies.
+The dependency injection container is responsible for creating the objects and injecting the dependencies.
+The controller is responsible for calling the correct action and returning the response.
 
 How to set up the application:
 1. Clone the repository
 2. docker-compose up 
 3. composer install
 4. open: http://localhost:40000
-5. 
 ### Requirements
 - docker
 
